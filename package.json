@@ -1,6 +1,12 @@
 {
-  "name": "SDKOutput",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "name": "RNSDK",
+  "version": "1.1.0",
+  "description": "Description of RNSDK",
+  "author": "xinya",
+  "homepage": "https://github.com/xinyahao/rn-ios-sdk",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xinyahao/rn-ios-sdk.git"
+  }
 }
