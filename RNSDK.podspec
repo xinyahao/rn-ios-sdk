@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.author       = "xinya"
   s.homepage     = "https://github.com/xinyahao/rn-ios-sdk"
 
-  s.source       = { :git => https://github.com/xinyahao/rn-ios-sdk.git }
+  s.source       = { :git => 'https://github.com/xinyahao/rn-ios-sdk.git' }
   s.vendored_frameworks = "Frameworks/*"
 
   s.library = 'c++'
