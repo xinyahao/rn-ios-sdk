@@ -3,20 +3,17 @@ require "json"
 package = JSON.parse(File.read(File.join(__dir__, "package.json")))
 
 Pod::Spec.new do |s|
-  s.name         = package['name']
-  s.module_name  = package['name']
-  s.version      = package['version']
-  s.summary      = package['description']
-  s.license      = package['license']
+  s.name         = 'rn-sdk-ios'
+  s.module_name  = 'rn-sdk-ios'
+  s.version      = '1.0.0'
+  s.summary                = "-"  # TODO
+  s.license      = "MIT"
 
-  s.author       = package['author']
-  s.homepage     = package['homepage']
+  s.author       = "xinya"
+  s.homepage     = "https://github.com/xinyahao/rn-ios-sdk"
 
-  s.source       = { :git => package['repository']['url'] }
+  s.source       = { :git => https://github.com/xinyahao/rn-ios-sdk.git }
   s.vendored_frameworks = "Frameworks/*"
-  s.resource_bundles = {
-    package['name'] => ["Rescources/*"],
-  }
 
   s.library = 'c++'
   s.xcconfig = {
@@ -24,3 +21,4 @@ Pod::Spec.new do |s|
     'CLANG_CXX_LIBRARY' => 'libc++'
   }
 end
+
